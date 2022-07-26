@@ -10,7 +10,7 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "checkJs": true
   },
   "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte"]
