@@ -27,11 +27,13 @@
 
 
 
-  <ul class="list">
+  {#if todos.length}
+    <ul class="list">
     {#each todos as message, i}
       <TodoItem message={message} index={i} removeHandler={removeHandler} />
     {/each}
   </ul>
+  {/if}
 </div>
 
 

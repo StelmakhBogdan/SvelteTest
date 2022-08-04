@@ -3,7 +3,7 @@
   import Counter from './lib/Counter.svelte'
   import TodoList from './components/TodoList.svelte'
 
-  const name = 'My new framework'
+  const name = 'Svelte framework'
 </script>
 
 <main>
@@ -38,8 +38,5 @@
   }
   .logo.svelte:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
   }
 </style>
