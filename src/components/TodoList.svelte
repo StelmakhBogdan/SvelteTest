@@ -24,9 +24,6 @@
     <button class="add_task_btn" on:click={addTodo}>Add new task</button>
   </div>
 
-
-
-
   {#if todos.length}
     <ul class="list">
     {#each todos as message, i}
@@ -34,6 +31,12 @@
     {/each}
   </ul>
   {/if}
+
+  {#if !todos.length}
+    <span>List are empty!</span>
+  {/if}
+
+
 </div>
 
 
