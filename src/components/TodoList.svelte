@@ -9,18 +9,24 @@
       todos = [...todos, newTodo];
       newTodo = '';
     }
-  }
+  };
 
   const removeHandler = (id) => {
     todos = [...todos.filter((item, index) => index !== id)]
-  }
+  };
+
+  const handlerKeyEnter = (e) => {
+    if (e.code === 'Enter') {
+      addTodo();
+    }
+  };
 
 </script>
 
 <div>
   <div class="tl">
     <label for="input_msg">Todo name</label>
-    <input bind:value={newTodo} id="input_msg" type="text" placeholder="Text your message..." class="input_msg"/>
+    <input bind:value={newTodo} on:keydown={handlerKeyEnter} id="input_msg" type="text" placeholder="Text your message..." class="input_msg"/>
     <button class="add_task_btn" on:click={addTodo}>Add new task</button>
   </div>
 
