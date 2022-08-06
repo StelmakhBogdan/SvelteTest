@@ -21,9 +21,12 @@
     }
   };
 
+  $: totalCount = todos.length;
+
 </script>
 
 <div>
+  <h5 class="list_counter">Total todos: {totalCount}</h5>
   <div class="tl">
     <label for="input_msg">Todo name</label>
     <input bind:value={newTodo} on:keydown={handlerKeyEnter} id="input_msg" type="text" placeholder="Text your message..." class="input_msg"/>
@@ -47,6 +50,12 @@
 
 
 <style>
+  .list_counter {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
   .tl {
     display: flex;
     justify-content: space-between;
