@@ -52,7 +52,7 @@
 <style>
   .list_counter {
     text-align: left;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
   }
 
