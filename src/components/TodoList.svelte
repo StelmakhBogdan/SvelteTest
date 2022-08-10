@@ -65,12 +65,13 @@
   }
 
   .add_task_btn {
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background-color: #213547;
+    background-color: green;
+    font-size: 14px;
   }
 
   .list {
