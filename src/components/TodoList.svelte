@@ -21,6 +21,10 @@
     }
   };
 
+  const handleRemoveAll = () => {
+    todos = [];
+  };
+
   $: totalCount = todos.length;
 
 </script>
@@ -40,6 +44,12 @@
     {/each}
   </ul>
   {/if}
+
+  <div>
+    {#if todos.length}
+      <button class="remove_all_tasks_btn"  on:click={handleRemoveAll}>Remove all</button>
+    {/if}
+  </div>
 
   {#if !todos.length}
     <span>List are empty!</span>
@@ -71,6 +81,16 @@
     justify-content: center;
     color: #ffffff;
     background-color: green;
+    font-size: 14px;
+  }
+
+  .remove_all_tasks_btn {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: firebrick;
     font-size: 14px;
   }
 
