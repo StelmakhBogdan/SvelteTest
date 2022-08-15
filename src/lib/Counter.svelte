@@ -7,13 +7,15 @@
   const decrement = () => {
     count -= 1
   }
+
+  $: isDisabledMin = count <= 0
 </script>
 
 <div class="wrapper">
   <button on:click={increment}>
     Increment
   </button>
-  <button on:click={decrement}>
+  <button on:click={decrement} disabled={isDisabledMin}>
     Decrement
   </button>
 </div>
