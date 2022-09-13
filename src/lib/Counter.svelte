@@ -22,10 +22,14 @@
 <div>
   Count: {count}
 </div>
+<div>
+  Count + 1: {count + 1}
+</div>
 
 <style>
   .wrapper {
     display: flex;
     justify-content: space-between;
+
   }
 </style>
